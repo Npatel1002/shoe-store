@@ -20,7 +20,7 @@
 ## Database Schema Design
 
 ### Products Schema (MongoDB)
-
+- `Id`: Unique id for Product identification
 - `name`: String
 - `description`: String
 - `price`: Number
@@ -28,17 +28,10 @@
 - `stock`: Number
 - `imageUrl`: String
 
-### Users Schema (MongoDB)
-
-- `username`: String
-- `password`: String (hashed)
-- `email`: String
-- `role`: String (admin/user)
-
 ### Orders Schema (MongoDB)
 
-- `userId`: ObjectId (Reference to Users)
-- `products`: Array of objects { productId: ObjectId, quantity: Number }
+- `Id`: Unique id for oder identification
+- `products`: Array of objects { productId:ObjectId, quantity: Number }
 - `totalPrice`: Number
 - `orderDate`: Date
 
