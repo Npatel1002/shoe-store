@@ -8,7 +8,8 @@ import img7 from "../assets/images/img7.jpeg";
 import img8 from "../assets/images/img8.jpg";
 
 const data = {
-  items: [
+  categories: ["All", "Sports", "Casual", "Formal"],
+  products: [
     {
       id: 1,
       title: "Nike",

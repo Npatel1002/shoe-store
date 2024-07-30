@@ -14,7 +14,7 @@ const Cart = () => {
   } = useCart();
 
   const handleBuy = () => {
-    alert("Thanyou for shopping with us your order will be dispatched soon");
+    alert("Thank for shopping with us you order will be dipatch soon...");
   };
 
   if (isEmpty) return <h1 className="text-center">Your cart is empty</h1>;
@@ -78,7 +78,7 @@ const Cart = () => {
             </tbody>
           </table>
           <div className="cart-summary">
-            <h2>Total price: ${cartTotal}</h2>
+            <h2>Total price: ${cartTotal} CAD</h2>
             <div className="cart-buttons">
               <button onClick={() => emptyCart()} className="btn btn-clear">
                 Clear Cart

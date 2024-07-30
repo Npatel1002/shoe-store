@@ -8,7 +8,7 @@ const ItemsCard = (props) => {
   return (
     <div className="col-11 col-md-6 col-lg-3 mx-0 mb-4">
       <div className="card p-0 overflow-hidden h-100 shadow">
-        <Link to={`/details/${props.item.id}`}>
+        <Link to={`/details/${props.item.id}]`}>
           <img src={props.img} className="card-img-top img-fluid" alt={props.title} />
         </Link>
         <div className="card-body text-center">
