@@ -11,23 +11,20 @@ const Home = () => {
   }, []);
 
   const filterByCategory = (category) => {
-    console.log("Filtering by category:", category);
     if (category === "All") {
       setFilteredProducts(data.products);
     } else {
       const filtered = data.products.filter((product) => product.category === category);
-      console.log("Filtered products:", filtered);
       setFilteredProducts(filtered);
     }
-    console.log("Filtered products state set to:", filteredProducts);
   };
 
   return (
-    <>
+    <div className="home-background">
       <h1 className="text-center mt-3">All items</h1>
-      <section className="py-4 container">
+      <section className="py-4 container home-container">
         <Categories categories={data.categories} filterByCategory={filterByCategory} />
-        <div className="row justify-content-center">
+        <div className="row justify-content-center home-row">
           {filteredProducts.map((item, index) => (
             <ItemsCard
               img={item.img}
@@ -39,7 +36,7 @@ const Home = () => {
           ))}
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

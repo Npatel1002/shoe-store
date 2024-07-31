@@ -14,19 +14,18 @@ const Cart = () => {
   } = useCart();
 
   const handleBuy = () => {
-    alert("Thank for shopping with us you order will be dipatch soon...");
+    alert("Thanyou for shopping with us you order will delivered soon.....");
   };
 
-  if (isEmpty) return <h1 className="text-center">Your cart is empty</h1>;
-
+  if (isEmpty) return <h1 className="text-center">Your cart is empty.</h1>;
   return (
     <section className="container">
       <div className="row justify-content-center">
         <div className="col-12">
-          <h5 className="cart-title">
-            Cart ({totalUniqueItems}) total Item: ({totalItems})
+          <h5 className="cart-main-title">
+            Total Items
           </h5>
-          <table className="table cart-table">
+          <table className="table cart-items-table">
             <thead>
               <tr>
                 <th>Image</th>
@@ -42,7 +41,7 @@ const Cart = () => {
                   <td>
                     <img
                       src={item.img}
-                      className="cart-img"
+                      className="cart-item-image"
                       alt={item.title}
                     />
                   </td>
@@ -78,12 +77,12 @@ const Cart = () => {
             </tbody>
           </table>
           <div className="cart-summary">
-            <h2>Total price: ${cartTotal} CAD</h2>
-            <div className="cart-buttons">
-              <button onClick={() => emptyCart()} className="btn btn-clear">
+            <h2>Total price: ${cartTotal}</h2>
+            <div className="cart-buttons-container">
+              <button onClick={() => emptyCart()} className="btn clear-cart-button">
                 Clear Cart
               </button>
-              <button onClick={handleBuy} className="btn btn-buy">
+              <button onClick={handleBuy} className="btn buy-cart-button">
                 Buy Now
               </button>
             </div>

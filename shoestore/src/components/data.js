@@ -15,23 +15,23 @@ const data = {
       title: "Nike",
       category: "Sports",
       img: img1,
-      price: 400,
+      price: 40,
       description: "Nike shoes are designed for athletes and sports enthusiasts. They offer great comfort and durability."
     },
     {
       id: 2,
       title: "Puma",
       category: "Casual",
-      price: 500,
       img: img2,
+      price: 50,
       description: "Puma casual shoes are perfect for everyday wear, combining style and comfort."
     },
     {
       id: 3,
       title: "Adidas",
       category: "Sports",
-      price: 600,
       img: img3,
+      price: 50,
       description: "Adidas sports shoes are known for their innovative design and high performance on the field."
     },
     {
@@ -39,23 +39,23 @@ const data = {
       title: "Reebok",
       category: "Casual",
       img: img4,
-      price: 400,
+      price: 55,
       description: "Reebok shoes offer a blend of style and comfort, ideal for casual outings."
     },
     {
       id: 5,
       title: "New Balance",
       category: "Formal",
-      price: 500,
       img: img5,
+      price: 67,
       description: "New Balance formal shoes are designed to provide comfort and elegance for formal occasions."
     },
     {
       id: 6,
       title: "Kappa",
       category: "Sports",
-      price: 600,
       img: img6,
+      price: 45,
       description: "Kappa sports shoes are built for performance and endurance, suitable for various sports."
     },
     {
@@ -63,15 +63,15 @@ const data = {
       title: "Lacoste",
       category: "Formal",
       img: img7,
-      price: 400,
+      price: 40,
       description: "Lacoste formal shoes are known for their sophistication and premium quality."
     },
     {
       id: 8,
       title: "Levis",
       category: "Casual",
-      price: 500,
       img: img8,
+      price: 50,
       description: "Levis casual shoes offer a trendy look with the comfort needed for daily activities."
     }
   ]

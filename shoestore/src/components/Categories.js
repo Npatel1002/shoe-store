@@ -6,7 +6,7 @@ const Categories = ({ categories, filterByCategory }) => {
       {categories.map((category, index) => (
         <button
           key={index}
-          className="btn btn-primary m-2"
+          className="btn category-button m-2"
           onClick={() => filterByCategory(category)}
         >
           {category}
@@ -15,5 +15,4 @@ const Categories = ({ categories, filterByCategory }) => {
     </div>
   );
 };
-
 export default Categories;
