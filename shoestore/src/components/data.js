@@ -7,16 +7,21 @@ import img6 from "../assets/images/img6.jpg";
 import img7 from "../assets/images/img7.jpeg";
 import img8 from "../assets/images/img8.jpg";
 
-const data = {
-  categories: ["All", "Sports", "Casual", "Formal"],
-  products: [
+// contains information of cateegories and products
+const data=
+{   
+    // listing various categories
+    categories: ["All", "Sports", "Casual", "Formal"],
+    
+    // product details
+    products: [
     {
       id: 1,
       title: "Nike",
       category: "Sports",
       img: img1,
       price: 40,
-      description: "Nike shoes are designed for athletes and sports enthusiasts. They offer great comfort and durability."
+      description: "These shoues provide best comfort and durablity so they are best for athelits and sports man."
     },
     {
       id: 2,
@@ -24,7 +29,7 @@ const data = {
       category: "Casual",
       img: img2,
       price: 50,
-      description: "Puma casual shoes are perfect for everyday wear, combining style and comfort."
+      description: "These shoues are made from synthetc leather so they are longlasting. They ate best for everyday use."
     },
     {
       id: 3,
@@ -32,7 +37,7 @@ const data = {
       category: "Sports",
       img: img3,
       price: 50,
-      description: "Adidas sports shoes are known for their innovative design and high performance on the field."
+      description: "These Shoues provide high perfomance on playground and known for they unique design. They are best for playing cricket"
     },
     {
       id: 4,
@@ -40,7 +45,7 @@ const data = {
       category: "Casual",
       img: img4,
       price: 55,
-      description: "Reebok shoes offer a blend of style and comfort, ideal for casual outings."
+      description: "These shoues are lightweight and best for everyday use."
     },
     {
       id: 5,
@@ -48,7 +53,7 @@ const data = {
       category: "Formal",
       img: img5,
       price: 67,
-      description: "New Balance formal shoes are designed to provide comfort and elegance for formal occasions."
+      description: "These formal shoues provide greate comfort and a good style on formal occasions."
     },
     {
       id: 6,
@@ -56,7 +61,7 @@ const data = {
       category: "Sports",
       img: img6,
       price: 45,
-      description: "Kappa sports shoes are built for performance and endurance, suitable for various sports."
+      description: "These are peformance oriented shoues best for various types of sports."
     },
     {
       id: 7,
@@ -64,7 +69,7 @@ const data = {
       category: "Formal",
       img: img7,
       price: 40,
-      description: "Lacoste formal shoes are known for their sophistication and premium quality."
+      description: "These shoues provide best quality of shoues made of genuine leather suits for formal dressing."
     },
     {
       id: 8,
@@ -72,7 +77,7 @@ const data = {
       category: "Casual",
       img: img8,
       price: 50,
-      description: "Levis casual shoes offer a trendy look with the comfort needed for daily activities."
+      description: "These casual shoues creates a trendy look. They are best for casual outfit and regular wear."
     }
   ]
 };

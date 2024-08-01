@@ -45,5 +45,12 @@
 - The project is set up using Git and GitHub for version control.
 - Further development will include implementing user interfaces for product listings, shopping cart, and checkout.
 
+###Week 2
+
+1. Install The NodeModules to run the project.
+2. Install required Dependencies to run my project .
+
+3. right click on the frontend folder "Shoestore" and open integrated terminal and give command in terminal "npm start".
+4. right click on the backend folder "server" and open integrated terminal and give command in terminal "node app.js".
 
 ## License[MIT]

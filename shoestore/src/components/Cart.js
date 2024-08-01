@@ -1,42 +1,46 @@
 import React from "react";
-import { useCart } from "react-use-cart";
+import {useCart} from "react-use-cart";
 
-const Cart = () => {
-  const {
-    isEmpty,
-    totalUniqueItems,
+const Cart=()=> 
+{
+  // methods and properties from usecart
+const
+{
     items,
-    totalItems,
-    cartTotal,
+    isEmpty,
     updateItemQuantity,
     removeItem,
     emptyCart,
-  } = useCart();
+    cartTotal,
+}=useCart();
 
-  const handleBuy = () => {
+// buy function
+const handleBuy=()=>  
+{
     alert("Thanyou for shopping with us you order will delivered soon.....");
-  };
+};
 
-  if (isEmpty) return <h1 className="text-center">Your cart is empty.</h1>;
-  return (
+// displays a message when cart is empty
+if(isEmpty)return <h1 className="text-center">Cart is empty</h1>;
+return(
     <section className="container">
       <div className="row justify-content-center">
         <div className="col-12">
           <h5 className="cart-main-title">
-            Total Items
+            Orderd Items
           </h5>
           <table className="table cart-items-table">
             <thead>
               <tr>
-                <th>Image</th>
-                <th>Title</th>
+                <th>Picture</th>
+                <th>Name of Product</th>
                 <th>Price</th>
                 <th>Quantity</th>
                 <th>Actions</th>
               </tr>
             </thead>
             <tbody>
-              {items.map((item, index) => (
+              {items.map((item,index) => (
                 <tr key={index}>
                   <td>
                     <img
@@ -50,26 +54,26 @@ const Cart = () => {
                   <td>{item.quantity}</td>
                   <td>
                     <button
-                      onClick={() =>
-                        updateItemQuantity(item.id, item.quantity - 1)
+                      onClick={()=>
+                        updateItemQuantity(item.id,item.quantity-1)
                       }
-                      className="btn btn-info btn-sm"
+                      className="btn btn-light btn-sm"
                     >
                       -
                     </button>
                     <button
-                      onClick={() =>
-                        updateItemQuantity(item.id, item.quantity + 1)
+                      onClick={()=>
+                        updateItemQuantity(item.id,item.quantity+1)
                       }
-                      className="btn btn-info btn-sm ms-2"
+                      className="btn btn-light btn-sm ms-3"
                     >
                       +
                     </button>
                     <button
-                      onClick={() => removeItem(item.id)}
-                      className="btn btn-danger btn-sm ms-2"
+                      onClick={()=>removeItem(item.id)}
+                      className="btn btn-danger btn-sm ms-3"
                     >
-                      Remove
+                        Remove
                     </button>
                   </td>
                 </tr>
@@ -79,11 +83,11 @@ const Cart = () => {
           <div className="cart-summary">
             <h2>Total price: ${cartTotal}</h2>
             <div className="cart-buttons-container">
-              <button onClick={() => emptyCart()} className="btn clear-cart-button">
-                Clear Cart
+              <button onClick={()=>emptyCart()} className="btn clear-cart-button">
+                Clear Cart Items
               </button>
-              <button onClick={handleBuy} className="btn buy-cart-button">
-                Buy Now
+              <button onClick={handleBuy} className="btn order-cart-button">
+                Order Now
               </button>
             </div>
           </div>
