@@ -8,6 +8,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Details from "./components/Details";
 import Profile from "./components/Profile";
+import Checkout from "./components/Checkout";
+//import Admin from "./components/Admin";
 import {CartProvider} from "react-use-cart";
 
 export default function App() 
@@ -22,6 +24,7 @@ export default function App()
           <Route path="/cart" element={<Cart/>}/>
           <Route path="/details/:id" element={<Details/>}/>
           <Route path="/profile" element={<Profile/>}/>
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
         <Footer/>
       </div>

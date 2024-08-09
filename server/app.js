@@ -2,6 +2,8 @@ const express=require('express');
 const mongoose=require('mongoose');
 const productRoutes=require('./routes/Product');
 const orderRoutes=require('./routes/Order');
+const cors=require('cors');
+const categoryRoutes=require('./routes/Category');
 
 const app=express();
 const port=4000;
@@ -18,6 +20,7 @@ mongoose.connect(database,{useNewUrlParser:true,useUnifiedTopology:true})
     app.use(express.json());
     app.use('/api/products', productRoutes);
     app.use('/api/orders', orderRoutes);
+    app.use('/api/categories', categoryRoutes);
     app.get('/', (req, res) => {
     res.send('Welcome to the Custom Collection API');
 });

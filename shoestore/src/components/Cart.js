@@ -1,5 +1,6 @@
 import React from "react";
 import {useCart} from "react-use-cart";
+import { useNavigate } from 'react-router-dom';
 
 const Cart=()=> 
 {
@@ -13,11 +14,11 @@ const
     emptyCart,
     cartTotal,
 }=useCart();
-
+const navigate = useNavigate();
 // buy function
 const handleBuy=()=>  
 {
-    alert("Thanyou for shopping with us you order will delivered soon.....");
+  navigate('/checkout');  
 };
 
 // displays a message when cart is empty
