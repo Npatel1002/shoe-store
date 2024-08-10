@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import Admin from './Admin';
+import '../assets/css/adminLogin.css';
 
 const Login = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [password, setPassword] = useState('');
 
     const handleLogin = () => {
-        // Simple hardcoded password check
-        if (password === 'admin123') {
+        // hardcoded password 
+        if (password === 'NeelPatel') {
             setIsLoggedIn(true);
         } else {
             alert('Incorrect password');
@@ -19,7 +20,7 @@ const Login = () => {
     }
 
     return (
-        <div className="container">
+        <div className="login-container">
             <h2 className="text-center">Admin Login</h2>
             <div className="form-group">
                 <input

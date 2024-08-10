@@ -2,7 +2,7 @@ const express=require('express');
 const mongoose=require('mongoose');
 const productRoutes=require('./routes/Product');
 const orderRoutes=require('./routes/Order');
-const cors=require('cors');
+const cors=require('cors'); // share data between websites
 const categoryRoutes=require('./routes/Category');
 
 const app=express();
@@ -16,7 +16,9 @@ mongoose.connect(database,{useNewUrlParser:true,useUnifiedTopology:true})
                 console.log(`Server is running on ${port}`);
         });
     })
-    .catch((error) => console.error('Mongodb connection error:',error));
+    .catch((error)=>console.error('Mongodb connection not Established:',error));
+    // Middleware
+    app.use(cors());
     app.use(express.json());
     app.use('/api/products', productRoutes);
     app.use('/api/orders', orderRoutes);

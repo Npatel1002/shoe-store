@@ -53,4 +53,9 @@
 3. right click on the frontend folder "Shoestore" and open integrated terminal and give command in terminal "npm start".
 4. right click on the backend folder "server" and open integrated terminal and give command in terminal "node app.js".
 
+###same steps to run the project mentioned in week 2.
+1. for admin login use this url:http://localhost:3000/admin/login
+2. for admin dashboard use this url:http://localhost:3000/admin
+3. To login as admin (didn't included username) => password :NeelPatel 
+
 ## License[MIT]

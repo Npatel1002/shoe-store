@@ -4,7 +4,7 @@ const Order=require('../models/order');
 const router=express.Router();
 
 // create new order
-router.post('/', async(req,res)=>
+router.post('/',async(req,res)=>
 {
     
     const order=new Order(req.body);

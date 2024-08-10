@@ -7,14 +7,9 @@ const Cart=()=>
   // methods and properties from usecart
 const
 {
-    items,
-    isEmpty,
-    updateItemQuantity,
-    removeItem,
-    emptyCart,
-    cartTotal,
+    items,isEmpty,updateItemQuantity,removeItem,emptyCart,cartTotal,
 }=useCart();
-const navigate = useNavigate();
+const navigate=useNavigate();
 // buy function
 const handleBuy=()=>  
 {
@@ -22,7 +17,7 @@ const handleBuy=()=>
 };
 
 // displays a message when cart is empty
-if(isEmpty)return <h1 className="text-center">Cart is empty</h1>;
+if(isEmpty)return <h1 className="text-center">Your cart is empty.., please add item</h1>;
 return(
     <section className="container">
       <div className="row justify-content-center">
@@ -85,7 +80,7 @@ return(
             <h2>Total price: ${cartTotal}</h2>
             <div className="cart-buttons-container">
               <button onClick={()=>emptyCart()} className="btn clear-cart-button">
-                Clear Cart Items
+                Clear Items
               </button>
               <button onClick={handleBuy} className="btn order-cart-button">
                 Order Now

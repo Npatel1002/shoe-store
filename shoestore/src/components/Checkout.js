@@ -4,13 +4,7 @@ import { useCart } from 'react-use-cart';
 const Checkout = () => {
     const { items, cartTotal, emptyCart } = useCart();
     const [form, setForm] = useState({
-        name: '',
-        email: '',
-        address: '',
-        cardName: '',
-        cardNumber: '',
-        expiry: '',
-        cvv: ''
+        name: '',email: '',address: '',cardName: '',cardNumber: '',expiry: '',cvv: ''
     });
 
     const handleInputChange = (e) => {
@@ -19,22 +13,17 @@ const Checkout = () => {
     };
 
     const handleCardNumberChange = (e) => {
-        const formattedCardNumber = e.target.value.replace(/\D/g, '').replace(/(.{4})/g, '$1 ').trim();
+        const input = e.target.value;
+        const formattedCardNumber = input.split(' ').join('').match(/.{1,4}/g)?.join(' ') || '';
         setForm({ ...form, cardNumber: formattedCardNumber });
     };
 
     const handlePlaceOrder = () => {
         // Clear the form fields after submission to mimic a real-world scenario.
         setForm({
-            name: '',
-            email: '',
-            address: '',
-            cardName: '',
-            cardNumber: '',
-            expiry: '',
-            cvv: ''
+            name: '',email: '',address: '',cardName: '',cardNumber: '',expiry: '',cvv: ''
         });
-        alert('Order placed successfully!');
+        alert('Your order will delivered soon... thanks for shopping with us');
         emptyCart(); // Clears the cart after placing the order
     };
 
