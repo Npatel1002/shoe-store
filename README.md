@@ -57,5 +57,6 @@
 1. for admin login use this url:http://localhost:3000/admin/login
 2. for admin dashboard use this url:http://localhost:3000/admin
 3. To login as admin (didn't included username) => password :NeelPatel 
-
+4. Youtube vedio Link = https://youtu.be/gmj6Kw209r8
+ss
 ## License[MIT]

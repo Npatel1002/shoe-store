@@ -24,7 +24,7 @@ mongoose.connect(database,{useNewUrlParser:true,useUnifiedTopology:true})
     app.use('/api/orders', orderRoutes);
     app.use('/api/categories', categoryRoutes);
     app.get('/', (req, res) => {
-    res.send('Welcome to the Custom Collection API');
+    res.send('Welcome to the shoe store Collection API');
 });
 
 module.exports=app;
